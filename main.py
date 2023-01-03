@@ -1,17 +1,30 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 from datetime import date
+import math as matematica
+import matplotlib.pyplot as plt
+def unpacking_experiment(*args):
+	arg1 = args[0]
+	arg2 = args[1]
+	outroArg = args[2:]
+	print(arg1)
+	print(arg2)
+	print(outroArg)
+
+def unpacking(**kargs):
+    print(kargs)
 
 def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    print(f'Hi, {name}')
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    #unpacking_experiment(1,2,3,4,5,6,7,8,9)
+    #unpacking(named="Teste", other="Outro nome")
+    #raiz = matematica.sqrt(20)
+    #print(raiz)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+	x = [1,2,3,4]
+	y = [1,2,3,4]
+	plt.plot(x,y);
+	plt.show()
+
+
